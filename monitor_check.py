@@ -172,24 +172,36 @@ async def guess_reason(session, url, http_semaphore):
     except aiohttp.client_exceptions.ClientPayloadError:
         logger.debug('broken content %s', url)
         return False
-    reasons = [
-        "ImportError: cannot import name '(.*?)' from 'collections'",
-    ]
-    for reason in reasons:
-        #if reason in content:
-        match = re.search(rf"{reason}", content)
+    match = None
+    reasons = {
+        "collections": "ImportError: cannot import name '(.*?)' from 'collections'",
+        "segfault": "Segmentation fault",
+    }
+    for reason, pattern in reasons.items():
+        match = re.search(rf"{pattern}", content)
+        try:
+            short_desc = {
+                "collections": f"{match.group()}",
+                "segfault": "segmentation fault",
+            }
+            long_desc = {
+                "collections": f"""
+                {match.group()}
+                (/usr/lib64/python3.10/collections/__init__.py)
+
+                bpo-37324: Remove deprecated aliases to Collections Abstract Base Classes
+                from the collections module.
+
+                https://docs.python.org/3.10/whatsnew/changelog.html#python-3-10-0-alpha-5
+                """,
+                "segfault": "segmentation fault",
+            }
+        except:
+            pass
         if match:
             return {
-                "short_desc": f"{match.group()}",
-                "long_desc": f"""
-        {match.group()}
-        (/usr/lib64/python3.10/collections/__init__.py)
-
-        bpo-37324: Remove deprecated aliases to Collections Abstract Base Classes
-        from the collections module.
-
-        https://docs.python.org/3.10/whatsnew/changelog.html#python-3-10-0-alpha-5
-        """,
+                "short_desc": short_desc[reason],
+                "long_desc": long_desc[reason],
             }
     return {
         "short_desc": "",
