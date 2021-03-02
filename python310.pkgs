@@ -342,7 +342,6 @@ hokuyoaist
 holland
 home-assistant-cli
 hplip
-hpx
 httpie
 hugin
 hydrapaper
@@ -368,7 +367,6 @@ irclog2html
 iscsi-initiator-utils
 is-it-in-rhel
 isomd5sum
-jabberpy
 jack-mixer
 javapackages-tools
 jc
@@ -645,6 +643,7 @@ partio
 past-time
 patool
 pcapy
+pcl
 pcp
 pcp2pdf
 pcs
@@ -1011,6 +1010,7 @@ python-bottle-sqlite
 python-bowler
 python-box
 python-boxsdk
+python-bracex
 python-branca
 python-bravado
 python-bravado-core
@@ -1251,6 +1251,7 @@ python-dbf
 python-dbfread
 python-dbus-client-gen
 python-dbusmock
+python-dbus-next
 python-dbus-python-client-gen
 python-dbus-signature-pyparsing
 python-dcrpm
@@ -1822,7 +1823,6 @@ python-kombu
 python-korean-lunar-calendar
 python-krbcontext
 python-kubernetes
-python-kyotocabinet
 python-lacrosse
 python-landslide
 python-language-server
@@ -2661,7 +2661,6 @@ python-ruffus
 python-rustcfg
 python-rx
 python-rxjson
-python-ryu
 python-s3transfer
 python-saharaclient
 python-SALib
@@ -3399,6 +3398,7 @@ totpcgi
 tpm2-pkcs11
 trac
 tracer
+trac-tracnav-plugin
 trademgen
 transifex-client
 translate-toolkit
