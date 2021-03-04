@@ -96,6 +96,8 @@ async def gather_or_cancel(*tasks):
 async def main():
     packages = json.loads(await proc_output('copr', 'list-packages', copr))
     packages = [p['name'] for p in packages]
+    if sys.argv[2:]:
+        packages = [p for p in packages if p in sys.argv[2:]]
 
     command_semaphore = asyncio.Semaphore(8)
     to_delete = set()
