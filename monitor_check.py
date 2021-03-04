@@ -60,7 +60,7 @@ REASONS = {
         (/usr/lib64/python3.10/collections/__init__.py)
 
         The deprecated aliases to Collections Abstract Base Classes were removed from the collections module.
-        https://docs.python.org/3.10/whatsnew/changelog.html#python-3-10-0-alpha-5
+        https://docs.python.org/3.10/whatsnew/changelog.html#python-3-10-0-alpha-6
         https://bugs.python.org/issue37324""",
     },
     "segfault": {
@@ -420,7 +420,7 @@ async def open_bz(package, build, status, browser_lock, reason=None):
     summary = f"{package} fails to build with Python 3.10: {reason['short_description']}"
 
     description = dedent(f"""
-        {package} fails to build with Python 3.10.0a5.
+        {package} fails to build with Python 3.10.0a6.
 
         {reason['long_description']}
 
