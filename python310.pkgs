@@ -342,6 +342,7 @@ hokuyoaist
 holland
 home-assistant-cli
 hplip
+hpx
 httpie
 hugin
 hydrapaper
@@ -871,6 +872,7 @@ python-alsa
 python-alsaaudio
 python-altgraph
 python-amico
+python-amply
 python-amqp
 python-ana
 python-angr
@@ -953,6 +955,7 @@ python-babelfish
 python-backcall
 python-backlash
 python-backoff
+python-backrefs
 python-baluhn
 python-barbicanclient
 python-basemap
@@ -1957,6 +1960,7 @@ python-mne
 python-mne-bids
 python-mnemonic
 python-mock
+python-mock-ssh-server
 python-modernize
 python-modestmaps
 python-ModulemdTranslationHelpers
@@ -2103,6 +2107,7 @@ python-olefile
 python-oletools
 python-omnilogic
 python-onionbalance
+python-openant
 python-opencensus
 python-opencensus-proto
 python-opendata-transport
