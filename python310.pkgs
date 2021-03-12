@@ -342,6 +342,7 @@ hokuyoaist
 holland
 home-assistant-cli
 hplip
+hpx
 httpie
 hugin
 hydrapaper
@@ -399,7 +400,6 @@ lammps
 langtable
 lasso
 lazygal
-lcm
 ldapdomaindump
 ldeep
 ldns
@@ -490,6 +490,7 @@ lilv
 limnoria
 linkchecker
 link-grammar
+linux-thermaltake-rgb
 liquidctl
 lirc
 litecli
@@ -1850,6 +1851,7 @@ python-lexicon
 python-lfpy
 python-libarchive-c
 python-libcloud
+python-libcst
 python-libdiscid
 python-libevdev
 python-libnacl
@@ -2468,6 +2470,7 @@ python-pyswip
 python-pysword
 python-pytaglib
 python-pytapo
+python-pyte
 python-pytelegrambotapi
 python-pytenable
 python-pytest4
@@ -2581,6 +2584,7 @@ python-readthedocs-sphinx-ext
 python-rebulk
 python-recommonmark
 python-redis
+python-reedsolo
 python-regenmaschine
 python-regex
 python-registry
@@ -2897,6 +2901,7 @@ python-tasmotadevicecontroller
 python-tblib
 python-tbtrim
 python-tcxparser
+python-tcxreader
 python-tdlib
 python-tempdir
 python-tempita
@@ -3410,6 +3415,7 @@ transmageddon
 transtats-cli
 trash-cli
 tre
+trelby
 trellis
 tryton
 trytond
