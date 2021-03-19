@@ -510,6 +510,7 @@ maildirproc
 mailman3
 mailman3-fedmsg-plugin
 mailnag
+manafirewall
 mapserver
 marisa
 marshalparser
@@ -602,6 +603,7 @@ ocrmypdf
 oct2spec
 odcs
 odfpy
+offlineimap
 ogr2osm
 omniORB
 omniORBpy
@@ -868,6 +870,7 @@ python-airthings
 python-ajpy
 python-alarmdecoder
 python-alembic
+python-allpairspy
 python-alsa
 python-alsaaudio
 python-altgraph
@@ -929,6 +932,7 @@ python-asttokens
 python-astunparse
 python-async-generator
 python-asyncio-dgram
+python-asyncpg
 python-asyncssh
 python-async-timeout
 python-async-upnp-client
@@ -1074,6 +1078,7 @@ python-certbot-dns-sakuracloud
 python-certbot-nginx
 python-certifi
 python-cffi
+python-cffsubr
 python-cfgv
 python-cftime
 python-chai
@@ -1121,6 +1126,7 @@ python-cmdln
 python-cmigemo
 python-coapthon3
 python-cocotb
+python-codecov
 python-colander
 python-colcon-argcomplete
 python-colcon-bash
@@ -1226,6 +1232,7 @@ python-curio
 python-curtsies
 python-cvss
 python-cvxopt
+python-cwcwidth
 python-cx-oracle
 python-cxxfilt
 python-cycler
@@ -1363,6 +1370,7 @@ python-dockerpty
 python-docker-pycreds
 python-docker-squash
 python-docopt
+python-docs-theme
 python-docutils
 python-docx
 python-dogpile-cache
@@ -1382,6 +1390,7 @@ python-dulwich
 python-easyargs
 python-easyco
 python-easygui
+python-easyprocess
 python-eccodes
 python-ecdsa
 python-ECPy
@@ -1455,6 +1464,7 @@ python-ffc
 python-fiat
 python-fido2
 python-fields
+python-filecheck
 python-filelock
 python-filetype
 python-fiona
@@ -1748,6 +1758,7 @@ python-jaraco-collections
 python-jaraco-envs
 python-jaraco-functools
 python-jaraco-packaging
+python-jaraco-path
 python-jaraco-text
 python-javabridge
 python-javalang
@@ -2023,6 +2034,7 @@ python-nbconvert
 python-nbformat
 python-nbsphinx
 python-nbxmpp
+python-ncclient
 python-ndg_httpsclient
 python-ndjson-testrunner
 python-neo
@@ -2117,6 +2129,8 @@ python-openid-cla
 python-openid-teams
 python-openoffice
 python-openopt
+python-openpaperwork-core
+python-openpaperwork-gtk
 python-openpyxl
 python-openqa_client
 python-opensensemap-api
@@ -2185,10 +2199,12 @@ python-patch-ng
 python-path
 python-pathspec
 python-pathtools
+python-pathvalidate
 python-patiencediff
 python-patsy
 python-pbkdf2
 python-pbr
+python-pcicrawler
 python-pcodedmp
 python-pdfkit
 python-pdfminer
@@ -2296,6 +2312,7 @@ python-pyaes
 python-pyaib
 python-pyairnow
 python-pyairvisual
+python-py-algorand-sdk
 python-pyarlo
 python-pyasn1
 python-pybalboa
@@ -3026,6 +3043,7 @@ python-urlobject
 python-urwid
 python-urwidtrees
 python-userpath
+python-usort
 python-utils
 python-utmp
 python-uvicorn
@@ -3076,6 +3094,7 @@ python-watchdog
 python-watchgod
 python-waterfurnace
 python-wavio
+python-wcmatch
 python-wcwidth
 python-webassets
 python-webcolors
@@ -3376,6 +3395,7 @@ sword
 swtpm
 sympy
 syslog-ng
+sysmontask
 system-config-printer
 system-config-repo
 systemd-coredump-python
@@ -3543,6 +3563,7 @@ yubikey-manager
 z3
 zanata-python-client
 zbar
+zeitgeist
 zezere
 Zim
 zinnia
