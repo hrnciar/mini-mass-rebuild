@@ -22,7 +22,7 @@ PACKAGE = re.compile(r'<a href="/coprs/g/python/python3.10/package/([^/]+)/">')
 BUILD = re.compile(r'<a href="/coprs/g/python/python3.10/build/([^/]+)/">')
 RESULT = re.compile(r'<span class="build-([^"]+)"')
 RPM_FILE = "<td class='t'>RPM File</td>"
-TAG = 'f34'
+TAG = 'f35'
 LIMIT = 1200
 BUGZILLA = 'bugzilla.redhat.com'
 TRACKER = 1890881  # PYTHON3.10
