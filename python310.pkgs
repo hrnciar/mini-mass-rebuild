@@ -19,8 +19,8 @@ andriller
 androguard
 androwarn
 ansible
-ansible-base
 ansible-bender
+ansible-core
 ansible-inventory-grapher
 ansible-lint
 ansible-review
@@ -106,6 +106,7 @@ ccnet
 ccsm
 cdist
 cekit
+centpkg
 ceph
 certbot
 chrome-gnome-shell
@@ -169,7 +170,6 @@ dib-utils
 diceware
 did
 diffoscope
-dionaea
 distcc
 distgen
 distro-info
@@ -270,16 +270,15 @@ gitlint
 git-pull-request
 GitPython
 git-review
-git-up
 gjots2
 glade
 glances
 globus-net-manager
-glom
 glusterfs
 gmsh
 gnofract4d
 gnome-abrt
+gnome-activity-journal
 gnome-builder
 gnome-doc-utils
 gnome-feeds
@@ -291,6 +290,7 @@ gns3-gui
 gns3-net-converter
 gns3-server
 gnucash
+gnumeric
 gnuradio
 go2rpm
 gobject-introspection
@@ -311,6 +311,7 @@ grammalecte
 gramps
 graphviz
 gr-fcdproplus
+gr-funcube
 gr-hpsdr
 grin
 gr-iqbal
@@ -342,7 +343,6 @@ hokuyoaist
 holland
 home-assistant-cli
 hplip
-hpx
 httpie
 hugin
 hydrapaper
@@ -436,6 +436,7 @@ libiio
 libiptcdata
 libixion
 libkdtree++
+libkdumpfile
 libkml
 libkolabxml
 libldb
@@ -587,6 +588,7 @@ NLopt
 nml
 nmstate
 nodepool
+noggin
 nordugrid-arc
 nordugrid-arc-nagios-plugins
 notcurses
@@ -598,6 +600,7 @@ numpy
 nut
 nvmetcli
 nwchem
+nwg-panel
 nyx
 ocrmypdf
 oct2spec
@@ -609,6 +612,7 @@ omniORB
 omniORBpy
 onboard
 onionshare
+opae
 openbabel
 opencv
 openexr
@@ -620,6 +624,7 @@ openmpi
 openscap
 openscap-daemon
 openshadinglanguage
+openssh-ldap-authkeys
 opentrep
 openvdb
 openvswitch
@@ -644,6 +649,7 @@ paraview
 parsero
 partio
 past-time
+paternoster
 patool
 pcapy
 pcl
@@ -695,6 +701,7 @@ protobuf
 protontricks
 protonvpn-cli
 prunerepo
+psi4
 pss
 pssh
 ptpython
@@ -1342,7 +1349,6 @@ python-django-pyscss
 python-django-pytest
 python-djangoql
 python-django-redis
-python-django-registration
 python-django-rest-framework
 python-django-reversion
 python-django-robots
@@ -1377,10 +1383,12 @@ python-dogpile-cache
 python-doit
 python-dominate
 python-dotenv
+python-doubleratchet
 python-dpath
 python-dpkt
 python-drat
 python-drf-yasg
+python-drgn
 python-dropbox
 python-dtfabric
 python-dtopt
@@ -1397,6 +1405,7 @@ python-ECPy
 python-edgegrid
 python-edimax
 python-editdistance
+python-editdistance-s
 python-editor
 python-editorconfig
 python-efel
@@ -1483,39 +1492,31 @@ python-flake8-polyfill
 python-flaky
 python-flask
 python-flask-admin
-python-flask-assets
 python-flask-autoindex
 python-flask-babel
-python-flask-babelex
 python-flask-bootstrap
 python-flask-caching
 python-flask-compress
 python-flask-cors
-python-flask-gravatar
 python-flask-healthz
 python-flask-htmlmin
 python-flask-httpauth
 python-flask-login
-python-flask-mail
 python-flask-mako
 python-flask-migrate
 python-flask-multistatic
-python-flask-oauth
 python-flask-oidc
 python-flask-openid
-python-flask-paranoid
 python-flask-principal
-python-flask-pymongo
 python-flask-restful
 python-flask-restplus
 python-flask-restx
 python-flask-rstpages
 python-flask-script
-python-flask-security
 python-flask-silk
 python-flask-socketio
-python-flask-sphinx-themes
 python-flask-sqlalchemy
+python-flask-talisman
 python-flask-whooshee
 python-flask-wtf
 python-flask-wtf-decorators
@@ -1695,6 +1696,7 @@ python-hyperframe
 python-hyperlink
 python-hypothesis
 python-hypothesis-fspaths
+python-hypothesmith
 python-i3ipc
 python-icalendar
 python-identify
@@ -1727,6 +1729,7 @@ python-inotify_simple
 python-instant
 python-insteon
 python-interfile
+python-interrogate
 python-intervaltree
 python-into-dbus-python
 python-invoke
@@ -1839,6 +1842,7 @@ python-krbcontext
 python-kubernetes
 python-lacrosse
 python-landslide
+python-langdetect
 python-language-server
 python-lark-parser
 python-lasagne
@@ -2026,6 +2030,7 @@ python-mysqlclient
 python-mystrom
 python-Naked
 python-nanoid
+python-nashpy
 python-natlas-libnmap
 python-natsort
 python-nb2plots
@@ -2483,6 +2488,7 @@ python-pysrt
 python-pystalk
 python-pystemd
 python-pystray
+python-pyswarms
 python-pyswip
 python-pysword
 python-pytaglib
@@ -2533,6 +2539,7 @@ python-pytest-rerunfailures
 python-pytest-runner
 python-pytest-sanic
 python-pytest-shutil
+python-pytest-smartcov
 python-pytest-sourceorder
 python-pytest-spec
 python-pytest-steps
@@ -2550,12 +2557,15 @@ python-pytest-virtualenv
 python-pytest-watch
 python-pytest-xdist
 python-pytest-xprocess
+python-pytest-xvfb
 python-pytile
 python-pytimeparse
 python-pytools
 python-pytzdata
 python-pyudev
+python-pyunicorn
 python-pyvex
+python-pyvirtualdisplay
 python-pyvirtualize
 python-pyvit
 python-pyvlx
@@ -2598,6 +2608,7 @@ python-readability-lxml
 python-readlike
 python-readme-renderer
 python-readthedocs-sphinx-ext
+python-re-assert
 python-rebulk
 python-recommonmark
 python-redis
@@ -2723,7 +2734,6 @@ python-service-identity
 python-setproctitle
 python-setuptools
 python-setuptools_git
-python-setuptools_hg
 python-setuptools-lint
 python-setuptools-rust
 python-setuptools_scm
@@ -2732,7 +2742,6 @@ python-sexpdata
 python-sgmllib3k
 python-sh
 python-shade
-python-shadowsocks
 python-shamir-mnemonic
 python-shapely
 python-shellingham
@@ -2850,6 +2859,7 @@ python-sphinx-theme-alabaster
 python-sphinx-theme-py3doc-enhanced
 python-sphobjinv
 python-spnego
+python-sport-activities-features
 python-spur
 python-spyder-kernels
 python-spyking-circus
@@ -2983,6 +2993,7 @@ python-transaction
 python-transforms3d
 python-transitions
 python-translationstring
+python-translitcodec
 python-tree-format
 python-treq
 python-trezor
@@ -3056,7 +3067,6 @@ python-vconnector
 python-vcrpy
 python-vcstool
 python-vcstools
-python-vcversioner
 python-vdf
 python-velbus
 python-venusian
@@ -3096,7 +3106,6 @@ python-waterfurnace
 python-wavio
 python-wcmatch
 python-wcwidth
-python-webassets
 python-webcolors
 python-webencodings
 python-webob
@@ -3283,7 +3292,6 @@ rebase-helper
 recoll
 rednotebook
 redshift
-regindexer
 relval
 renderdoc
 reprotest
@@ -3379,6 +3387,7 @@ stgit
 stomppy
 stp
 stratis-cli
+s-tui
 subscription-manager
 subunit
 subversion
