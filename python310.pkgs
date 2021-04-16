@@ -118,6 +118,7 @@ clingo
 cloud-init
 clufter
 clustershell
+cm_rgb
 cobbler
 coccinelle
 codespell
@@ -148,7 +149,6 @@ csdiff
 csmock
 csound
 cura
-cura-lulzbot
 custodia
 cvc4
 cxxtest
@@ -310,7 +310,6 @@ gr-air-modes
 grammalecte
 gramps
 graphviz
-gr-fcdproplus
 gr-funcube
 gr-hpsdr
 grin
@@ -343,6 +342,7 @@ hokuyoaist
 holland
 home-assistant-cli
 hplip
+hpx
 httpie
 hugin
 hydrapaper
@@ -411,7 +411,6 @@ lensfun
 lhapdf
 libaccounts-glib
 libarcus
-libarcus-lulzbot
 libbatch
 libblockdev
 libbytesize
@@ -477,6 +476,7 @@ libsvm
 libtalloc
 libtdb
 libtevent
+libucl
 libunity
 libuser
 libvirt-python
@@ -753,7 +753,6 @@ PyMca
 pymilia
 pymodbus
 pymol
-pynac
 pynag
 pyodbc
 pyOpenSSL
@@ -1010,6 +1009,7 @@ python-bloom
 python-blosc
 python-blowfish
 python-bluepy
+python-bluepyopt
 python-blurb
 python-bna
 python-bokeh
@@ -1484,6 +1484,7 @@ python-first
 python-fissix
 python-fisx
 python-fitsio
+python-fixit
 python-fixtures
 python-flake8
 python-flake8-docstrings
@@ -1752,6 +1753,8 @@ python-iso8601
 python-isodate
 python-isort
 python-itanium_demangler
+python-itemadapter
+python-itemloaders
 python-itsdangerous
 python-itypes
 python-j1m.sphinxautozconfig
@@ -1986,6 +1989,7 @@ python-molecule
 python-molecule-docker
 python-molecule-podman
 python-molten
+python-mongoengine
 python-mongomock
 python-mongoquery
 python-monotonic
@@ -2063,6 +2067,7 @@ python-neurodsp
 python-neurosynth
 python-neutronclient
 python-niaaml
+python-niaclass
 python-niapy
 python-nibabel
 python-nikola
@@ -2295,6 +2300,7 @@ python-progressbar2
 python-prometheus_client
 python-promise
 python-prompt-toolkit
+python-protego
 python-proteus
 python-prov
 python-psutil
@@ -2483,6 +2489,7 @@ python-pysocks
 python-pysol-cards
 python-pyspf
 python-pyspiflash
+python-pyspike
 python-pysqueezebox
 python-pysrt
 python-pystalk
@@ -2496,7 +2503,6 @@ python-pytapo
 python-pyte
 python-pytelegrambotapi
 python-pytenable
-python-pytest4
 python-pytest-aiohttp
 python-pytest-arraydiff
 python-pytest-astropy
@@ -3044,7 +3050,6 @@ python-uptime
 python-upt-pypi
 python-upt-rubygems
 python-uranium
-python-uranium-lulzbot
 python-uritemplate
 python-uri-templates
 python-urlgrabber
@@ -3423,6 +3428,7 @@ theme-switcher
 thonny
 thrift
 thunarx-python
+tiled
 timeline
 tito
 tldr
