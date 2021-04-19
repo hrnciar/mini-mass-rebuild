@@ -172,7 +172,7 @@ async def guess_missing_dependency(session, package, build, http_semaphore):
     except aiohttp.client_exceptions.ClientPayloadError:
         logger.debug('broken content %s', url)
         return False
-    match = re.findall(r"Problem.*?: package (.*?) requires", content)
+    match = re.findall(r"Problem.*?: package (.*?) requires python\(abi\) = 3\.9", content)
     if match:
         for broken_pkg in match:
             broken_srpm = source_name(broken_pkg)
