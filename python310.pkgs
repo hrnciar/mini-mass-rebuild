@@ -20,6 +20,7 @@ androguard
 androwarn
 ansible
 ansible-bender
+ansible-collections-openstack
 ansible-core
 ansible-inventory-grapher
 ansible-lint
@@ -135,6 +136,7 @@ conu
 COPASI
 copr-backend
 copr-cli
+copr-dist-git
 copr-keygen
 copr-messaging
 copr-rpmbuild
@@ -170,6 +172,7 @@ dib-utils
 diceware
 did
 diffoscope
+dionaea
 distcc
 distgen
 distro-info
@@ -299,7 +302,6 @@ gom
 goobook
 google-api-python-client
 google-auth-httplib2
-google-compute-engine-tools
 gpaw
 gpgme
 gphotoframe
@@ -551,6 +553,7 @@ mom
 moose
 mopidy
 mopidy-mpd
+morphio
 mozo
 mpi4py
 mpich
@@ -683,6 +686,7 @@ pocketsphinx
 podman-compose
 poetry
 poezio
+poezio-omemo
 policycoreutils
 porcupine
 portmidi
@@ -799,7 +803,6 @@ python3-pyPEG2
 python3-pytest-asyncio
 python3-saml
 python3-script
-python3-simplepam
 python3-simpletal
 python3-typed_ast
 python3-zope-fixers
@@ -1195,6 +1198,7 @@ python-constantly
 python-construct
 python-contextily
 python-contextlib2
+python-contextualbandits
 python-convertdate
 python-cookiecutter
 python-cooldict
@@ -1225,7 +1229,6 @@ python-crochet
 python-croniter
 python-crypto
 python-cryptography
-python-cryptography-vectors
 python-cson
 python-cssmin
 python-css-parser
@@ -1384,6 +1387,7 @@ python-doit
 python-dominate
 python-dotenv
 python-doubleratchet
+python-doxytag2zealdb
 python-dpath
 python-dpkt
 python-drat
@@ -1713,6 +1717,7 @@ python-imageio
 python-imagesize
 python-imbalanced-learn
 python-img2pdf
+python-immutables
 python-impacket
 python-importmagic
 python-incremental
@@ -2012,6 +2017,7 @@ python-msldap
 python-msrest
 python-msrestazure
 python-mtg
+python-mujson
 python-mulpyplexer
 python-multidict
 python-multi_key_dict
@@ -2047,8 +2053,6 @@ python-ncclient
 python-ndg_httpsclient
 python-ndjson-testrunner
 python-neo
-python-neo4j-driver
-python-neotime
 python-neovim
 python-nessus-file-reader
 python-nest_asyncio
@@ -2064,6 +2068,7 @@ python-networkmanager
 python-network-runner
 python-networkx
 python-neurodsp
+python-neurom
 python-neurosynth
 python-neutronclient
 python-niaaml
@@ -2128,8 +2133,11 @@ python-ogr
 python-okaara
 python-olefile
 python-oletools
+python-omemo
+python-omemo-backend-signal
 python-omnilogic
 python-onionbalance
+python-op1repacker
 python-openant
 python-opencensus
 python-opencensus-proto
@@ -2263,6 +2271,7 @@ python-plaster
 python-plaster-pastedeploy
 python-play-scraper
 python-plette
+python-plotly
 python-pluggy
 python-pluginbase
 python-pluginlib
@@ -2356,6 +2365,7 @@ python-pydispatcher
 python-pydocstyle
 python-pydotplus
 python-pyduofern
+python-pydyf
 python-pyeclib
 python-pyelectro
 python-pyemby
@@ -2512,7 +2522,6 @@ python-pytest-benchmark
 python-pytest-cache
 python-pytest-capturelog
 python-pytest-cases
-python-pytest-catchlog
 python-pytest-cov
 python-pytest-datafiles
 python-pytest-django
@@ -2654,6 +2663,7 @@ python-requests-pkcs12
 python-requests-toolbelt
 python-requests-unixsocket
 python-requre
+python-resolvelib
 python-responses
 python-respx
 python-restfly
@@ -2779,6 +2789,7 @@ python-slackclient
 python-slacker
 python-slip
 python-slixmpp
+python-slixmpp-omemo
 python-slugify
 python-smartcols
 python-smart-gardena
@@ -3153,12 +3164,14 @@ python-www-authenticate
 python-wxnatpy
 python-wxpython4
 python-x2go
+python-x3dh
 python-xapp
 python-xarray
 python-xbout
 python-xboxapi
 python-xcffib
 python-xdot
+python-xeddsa
 python-xiaomi-gateway
 python-xlib
 python-xlrd
@@ -3267,7 +3280,6 @@ pywebdav
 PyX
 pyxattr
 pyxdg
-pyxtrlock
 PyYAML
 pyzor
 qgis
