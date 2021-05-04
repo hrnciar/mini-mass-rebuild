@@ -344,7 +344,6 @@ hokuyoaist
 holland
 home-assistant-cli
 hplip
-hpx
 httpie
 hugin
 hydrapaper
@@ -2138,6 +2137,7 @@ python-omemo-backend-signal
 python-omnilogic
 python-onionbalance
 python-op1repacker
+python-op1svg
 python-openant
 python-opencensus
 python-opencensus-proto
