@@ -344,6 +344,7 @@ hokuyoaist
 holland
 home-assistant-cli
 hplip
+hpx
 httpie
 hugin
 hydrapaper
@@ -1134,7 +1135,6 @@ python-cmd2
 python-cmdln
 python-cmigemo
 python-coapthon3
-python-cocotb
 python-codecov
 python-colander
 python-colcon-argcomplete
@@ -1941,6 +1941,7 @@ python-martian
 python-masscan
 python-Mastodon
 python-matplotlib
+python-matplotlib-inline
 python-matplotlib-scalebar
 python-matrix-nio
 python-matrix-synapse-ldap3
