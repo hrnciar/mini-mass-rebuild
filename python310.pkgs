@@ -192,7 +192,6 @@ docker-compose
 doge
 dogtail
 dolfin
-domoticz
 dot2tex
 dput-ng
 dtc
@@ -355,6 +354,7 @@ ikiwiki
 ilua
 imagefactory
 imagefactory-plugins
+imath
 imgbased
 impressive
 initial-setup
@@ -541,6 +541,7 @@ mkdocs-alabaster
 mkdocs-bootstrap
 mkdocs-bootswatch
 mkdocs-cinder
+mkdocs-markdownextradata-plugin
 mkdocs-material
 mkosi
 mlpack
@@ -682,6 +683,7 @@ pki-core
 player
 playitagainsam
 plplot
+pmbootstrap
 pocketsphinx
 podman-compose
 poetry
@@ -790,6 +792,7 @@ pytest
 pythia8
 python3.9
 python3-cangjie
+python3-discid
 python3-exiv2
 python3-iep
 python3-lxc
@@ -1258,6 +1261,7 @@ python-danfossair
 python-daphne
 python-dasbus
 python-dask
+python-databases
 python-databay
 python-datadog
 python-datanommer-consumer
@@ -1398,6 +1402,7 @@ python-dtopt
 python-duecredit
 python-dukpy
 python-dulwich
+python-earthpy
 python-easyargs
 python-easyco
 python-easygui
@@ -1480,6 +1485,7 @@ python-filecheck
 python-filelock
 python-filetype
 python-fiona
+python-fireflyalgorithm
 python-FireflyAlgorithm
 python-firehose
 python-firkin
@@ -1609,7 +1615,6 @@ python-glyphsLib
 python-gmpy2
 python-gmqtt
 python-gnocchiclient
-python-gntp
 python-gnupg
 python-google-api-core
 python-googleapis-common-protos
@@ -1911,6 +1916,7 @@ python-ly
 python-lz4
 python-lzo
 python-m2r
+python-mackup
 python-magic
 python-magic-wormhole
 python-magic-wormhole-mailbox-server
@@ -1932,6 +1938,8 @@ python-marathon
 python-markdown
 python-markdown_2
 python-markdown2
+python-markdown-include
+python-markdown-it-py
 python-markdown-math
 python-markups
 python-markupsafe
@@ -1949,6 +1957,7 @@ python-maxminddb
 python-maya
 python-mccabe
 python-MDAnalysis
+python-mdit-py-plugins
 python-mdx_gh_links
 python-meautility
 python-mechanicalsoup
@@ -2037,6 +2046,7 @@ python-myhdl
 python-mypy_extensions
 python-mysql
 python-mysqlclient
+python-myst-parser
 python-mystrom
 python-Naked
 python-nanoid
@@ -2184,7 +2194,9 @@ python-os-testr
 python-ouimeaux
 python-outcome
 python-outdated
+python-overpy
 python-ovirt-engine-sdk4
+python-owl_rl
 python-OWSLib
 python-packaging
 python-pacpy
@@ -2320,6 +2332,7 @@ python-ptrace
 python-ptyprocess
 python-publicsuffix2
 python-pudb
+python-pulp
 python-pulsectl
 python-pure-protobuf
 python-pvc
@@ -2534,6 +2547,7 @@ python-pytest-fixture-config
 python-pytest-flake8
 python-pytest-flakes
 python-pytest-forked
+python-pytest-freezegun
 python-pytest-harvest
 python-pytest-helpers-namespace
 python-pytest-httpbin
@@ -2794,6 +2808,7 @@ python-slixmpp-omemo
 python-slugify
 python-smartcols
 python-smart-gardena
+python-smart_open
 python-smartypants
 python-smbc
 python-smbpasswd
@@ -2809,6 +2824,7 @@ python-snuggs
 python-social-auth-core
 python-socketio
 python-sockjs-tornado
+python-socks
 python-socks5line
 python-soco
 python-sortedcollections
@@ -2839,7 +2855,6 @@ python-sphinxcontrib-devhelp
 python-sphinxcontrib-github-alt
 python-sphinxcontrib-htmlhelp
 python-sphinxcontrib-httpdomain
-python-sphinxcontrib-issuetracker
 python-sphinxcontrib-jsmath
 python-sphinxcontrib-log-cabinet
 python-sphinxcontrib-openapi
@@ -2895,6 +2910,7 @@ python-ssdp
 python-sseclient
 python-sseclient-py
 python-ssh2-python
+python-sshpubkeys
 python-sshtunnel
 python-stackprinter
 python-starlette
@@ -3302,7 +3318,6 @@ rapid-photo-downloader
 rb_libtorrent
 RBTools
 rdiff-backup
-rdkit
 rdma-core
 rdopkg
 realtime-tests
@@ -3531,6 +3546,7 @@ urlbuster
 urlscan
 urlwatch
 ursa-major
+usd
 util-linux
 uwsgi
 vapoursynth
