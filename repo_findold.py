@@ -20,21 +20,21 @@ def split(nevra):
 
 
 def main():
-    python38 = set(pathlib.Path('python38.pkgs').read_text().splitlines())
+    all_packages = set(pathlib.Path('python310.pkgs').read_text().splitlines())
 
     kojirepo = set(pathlib.Path('koji.repoquery').read_text().splitlines())
-    py39repo = set(pathlib.Path('python39koji.repoquery').read_text().splitlines())
+    py310repo = set(pathlib.Path('python310koji.repoquery').read_text().splitlines())
 
     kojidict = dict(split(pkg) for pkg in kojirepo)
-    py39dict = dict(split(pkg) for pkg in py39repo)
+    py310dict = dict(split(pkg) for pkg in py310repo)
 
     todo = set()
 
-    for pkg in sorted(python38):
-        if pkg not in py39dict:
+    for pkg in sorted(all_packages):
+        if pkg not in py310dict:
             continue
-        sign = SIGNS[rpm.labelCompare(kojidict[pkg], py39dict[pkg])]
-        print(f'{pkg: <30} {"-".join(kojidict[pkg])} {sign} {"-".join(py39dict[pkg])}')
+        sign = SIGNS[rpm.labelCompare(kojidict[pkg], py310dict[pkg])]
+        print(f'{pkg: <30} {"-".join(kojidict[pkg])} {sign} {"-".join(py310dict[pkg])}')
 
         if sign == '>':
             todo.add(pkg)
