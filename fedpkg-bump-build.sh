@@ -1,5 +1,5 @@
 set -o pipefail  # make tee preserve the exit code
-fedpkg clone $1  2>&1 | tee ./${1}.log || exit $?
+fedpkg clone $1 -- --branch rawhide 2>&1 | tee ./${1}.log || exit $?
 
 cd $1
   if ! git show --name-only | grep -F "Python 3.10"; then
