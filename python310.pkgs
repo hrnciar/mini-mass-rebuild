@@ -343,7 +343,6 @@ hokuyoaist
 holland
 home-assistant-cli
 hplip
-hpx
 httpie
 hugin
 hydrapaper
@@ -1113,6 +1112,7 @@ python-cleo
 python-cliapp
 python-click
 python-click-completion
+python-click-default-group
 python-click-didyoumean
 python-click-help-colors
 python-click-log
@@ -2191,6 +2191,7 @@ python-oslo-utils
 python-osrf-pycommon
 python-os-service-types
 python-os-testr
+python-ots
 python-ouimeaux
 python-outcome
 python-outdated
