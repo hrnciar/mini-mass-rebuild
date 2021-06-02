@@ -20,10 +20,10 @@ def split(nevra):
 
 
 def main():
-    all_packages = set(pathlib.Path('python310.pkgs').read_text().splitlines())
+    all_packages = set(pathlib.Path('python39.pkgs').read_text().splitlines())
 
     kojirepo = set(pathlib.Path('koji.repoquery').read_text().splitlines())
-    py310repo = set(pathlib.Path('python310koji.repoquery').read_text().splitlines())
+    py310repo = set(pathlib.Path('koji-python3.10.repoquery').read_text().splitlines())
 
     kojidict = dict(split(pkg) for pkg in kojirepo)
     py310dict = dict(split(pkg) for pkg in py310repo)
