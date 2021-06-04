@@ -7,7 +7,7 @@ cd $1
     git commit *.spec -m "Rebuilt for Python 3.10" --author="Python Maint <python-maint@redhat.com>" | tee -a ../${1}.log
     git push
   fi
-  fedpkg build --target=f35-python --fail-fast --nowait --background 2>&1 | tee -a ../${1}.log
+  fedpkg build --target=f35-python --skip-remote-rules-validation --fail-fast --nowait --background 2>&1 | tee -a ../${1}.log
 cd -
 
 rm -rf $1
