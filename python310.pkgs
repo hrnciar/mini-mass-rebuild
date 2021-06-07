@@ -20,6 +20,7 @@ ansible
 ansible-bender
 ansible-collections-openstack
 ansible-core
+ansible-inventory-grapher
 ansible-lint
 apbs
 apostrophe
@@ -92,9 +93,11 @@ catfish
 ccnet
 ccsm
 cdist
+cekit
 centpkg
 ceph
 chrome-gnome-shell
+cinch
 cjdns
 clang
 classification-banner
@@ -128,6 +131,7 @@ custodia
 cvc4
 cxxtest
 Cython
+datanommer
 datanommer-commands
 dblatex
 dbus-python
@@ -152,6 +156,7 @@ dnf-plugin-ovl
 dnf-plugins-core
 dnf-plugins-extras
 dnsgen
+docker-compose
 doge
 dogtail
 dot2tex
@@ -204,6 +209,7 @@ future
 gajim
 gammastep
 gaupol
+gcovr
 gdb
 gdcm
 gdeploy
@@ -272,6 +278,7 @@ gwebsockets
 gyp
 hamlib
 hashid
+hatch
 hddfancontrol
 heat-cfntools
 HepMC3
@@ -320,6 +327,7 @@ khard
 kicad
 kig
 kismon
+kiwi
 koan
 kobo
 koji
@@ -412,6 +420,7 @@ limnoria
 linkchecker
 link-grammar
 linux-thermaltake-rgb
+litecli
 livecd-tools
 lldb
 lnst
@@ -456,6 +465,7 @@ mpsolve
 mqtt-randompub
 mraa
 msoffcrypto-tool
+mycli
 mysql-connector-python
 nanovna-saver
 nautilus-python
@@ -493,6 +503,7 @@ nwchem
 nwg-panel
 ocrmypdf
 oct2spec
+odcs
 odfpy
 offlineimap
 ogr2osm
@@ -521,6 +532,7 @@ otf2
 oval-graph
 oz
 pacemaker
+packit
 pag
 pagure
 pagure-dist-git
@@ -529,6 +541,7 @@ paperwork
 parsero
 partio
 past-time
+paternoster
 patool
 pcapy
 pcp
@@ -541,6 +554,7 @@ pdf-stapler
 percol
 persepolis
 pg_activity
+pgcli
 pgzero
 photocollage
 picard
@@ -593,6 +607,7 @@ pychromecast
 pycmd
 pycolumnize
 pydot
+PyDrive
 pyelftools
 pyflowtools
 pygame
@@ -616,6 +631,7 @@ pymodbus
 pynag
 pyodbc
 pyOpenSSL
+pyosmium
 pyotherside
 pyowm
 PyPAM
@@ -733,6 +749,7 @@ python-angr
 python-aniso8601
 python-ansi
 python-ansi2html
+python-ansible-runner
 python-ansicolor
 python-ansicolors
 python-ansiwrap
@@ -887,6 +904,7 @@ python-certifi
 python-cffi
 python-cffsubr
 python-cfgv
+python-cftime
 python-chai
 python-chameleon
 python-chardet
@@ -1150,6 +1168,7 @@ python-doit
 python-dominate
 python-dotenv
 python-doubleratchet
+python-doxytag2zealdb
 python-dpath
 python-dpkt
 python-drat
@@ -1599,6 +1618,7 @@ python-ly
 python-m2r
 python-mackup
 python-magic
+python-magic-wormhole
 python-magic-wormhole-mailbox-server
 python-magic-wormhole-transit-relay
 python-mailer
@@ -1778,11 +1798,13 @@ python-ogr
 python-okaara
 python-olefile
 python-omemo
+python-omemo-backend-signal
 python-omnilogic
 python-onionbalance
 python-op1repacker
 python-op1svg
 python-openant
+python-opencensus
 python-opencensus-proto
 python-opendata-transport
 python-openidc-client
@@ -1929,6 +1951,7 @@ python-profilehooks
 python-progress
 python-progressbar2
 python-prometheus_client
+python-promise
 python-prompt-toolkit
 python-protego
 python-proteus
@@ -2112,6 +2135,7 @@ python-pytaglib
 python-pytapo
 python-pyte
 python-pytelegrambotapi
+python-pytenable
 python-pytest-aiohttp
 python-pytest-arraydiff
 python-pytest-astropy
@@ -2152,8 +2176,10 @@ python-pytest-shutil
 python-pytest-smartcov
 python-pytest-sourceorder
 python-pytest-spec
+python-pytest-steps
 python-pytest-subtests
 python-pytest-sugar
+python-pytest-testinfra
 python-pytest-testmon
 python-pytest-timeout
 python-pytest-tornado
@@ -2461,6 +2487,7 @@ python-stackprinter
 python-statsd
 python-statsmodels
 python-stdiomask
+python-stdio-mgr
 python-stdlib-list
 python-stdnum
 python-steam
@@ -2496,6 +2523,7 @@ python-tasmotadevicecontroller
 python-tblib
 python-tbtrim
 python-tcxparser
+python-tcxreader
 python-tdlib
 python-tempdir
 python-tempita
@@ -2505,6 +2533,7 @@ python-termcolor
 python-terminado
 python-terminaltables
 python-teslajsonpy
+python-testinfra
 python-testing.postgresql
 python-testpath
 python-testrepository
@@ -2610,6 +2639,7 @@ python-vagrantpy
 python-validators
 python-varlink
 python-vatnumber
+python-vconnector
 python-vcrpy
 python-vcstool
 python-vcstools
@@ -2768,6 +2798,7 @@ python-zeroconf
 python-zipstream
 python-zm
 python-zmq
+python-ZODB
 python-zodbpickle
 python-zope-component
 python-zope-configuration
@@ -2947,6 +2978,7 @@ timeline
 tito
 tldr
 tlsh
+tmt
 todocli
 toot
 torbrowser-launcher
@@ -3014,6 +3046,7 @@ tuned
 txt2tags
 ubertooth
 udica
+udiskie
 uflash
 ufw
 ulauncher
@@ -3047,6 +3080,7 @@ volume_key
 wad
 waf
 wafw00f
+waiverdb
 WALinuxAgent
 wapiti
 weasyprint

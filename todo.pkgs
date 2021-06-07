@@ -1,6 +1,5 @@
 5minute
 androguard
-ansible-inventory-grapher
 ansible-review
 antlr4-project
 APLpy
@@ -12,9 +11,7 @@ bugzilla2fedmsg
 buildbot
 buildstream
 calibre
-cekit
 certbot
-cinch
 cloud-init
 clufter
 cobbler
@@ -26,7 +23,6 @@ copr-backend
 copr-dist-git
 cura
 datagrepper
-datanommer
 deluge
 diffoscope
 distgen
@@ -34,7 +30,6 @@ distro-info
 dlrn
 dnfdaemon
 dnfdragora
-docker-compose
 dolfin
 espresso
 fail2ban
@@ -44,7 +39,6 @@ fontdump
 freecad
 freeipa-desktop-profile
 freeipa-healthcheck
-gcovr
 gdal
 ginga
 gnome-gmail
@@ -57,7 +51,6 @@ gr-iqbal
 gr-osmosdr
 gr-rds
 h5py
-hatch
 imath
 imgbased
 ipsilon
@@ -65,7 +58,6 @@ jpype
 jrnl
 kdevelop-python
 kitty
-kiwi
 kiwi-boxed-plugin
 lasso
 ldns
@@ -81,7 +73,6 @@ libsigrokdecode
 libunity
 liquidctl
 lirc
-litecli
 luxcorerender
 m2crypto
 mailman3
@@ -105,28 +96,23 @@ mopidy
 mopidy-mpd
 mu
 MUSIC
-mycli
 nbdkit
 netcdf4-python
 NLopt
 notcurses
 nut
 nyx
-odcs
 opencv
 OpenIPMI
 openmeeg
 openscap
 opentrep
 osbs-client
-packit
 paraview
-paternoster
 pcl
 perl-Inline-Python
 petsc
 pew
-pgcli
 pipx
 pki-core
 postfix-mta-sts-resolver
@@ -136,14 +122,12 @@ ProDy
 psi4
 py4j
 pydeps
-PyDrive
 pyee
 pyflakes
 pygrib
 pykka
 PyMca
 pymol
-pyosmium
 pyp2rpm
 pyproj
 py-radix
@@ -159,7 +143,6 @@ python-aiosmtpd
 python-aiostream
 python-aiozmq
 python-animatplot
-python-ansible-runner
 python-anyio
 python-aodhclient
 python-apprise
@@ -203,7 +186,6 @@ python-certbot-dns-rfc2136
 python-certbot-dns-route53
 python-certbot-dns-sakuracloud
 python-certbot-nginx
-python-cftime
 python-chaospy
 python-cheetah
 python-cinderclient
@@ -238,7 +220,6 @@ python-django-formtools
 python-django-post_office
 python-dkimpy
 python-docx
-python-doxytag2zealdb
 python-drgn
 python-duecredit
 python-earthpy
@@ -318,7 +299,6 @@ python-libpysal
 python-losant-rest
 python-lz4
 python-lzo
-python-magic-wormhole
 python-magnumclient
 python-manilaclient
 python-mapclassify
@@ -365,8 +345,6 @@ python-numpoly
 python-octaviaclient
 python-odml
 python-oletools
-python-omemo-backend-signal
-python-opencensus
 python-openstackclient
 python-openstacksdk
 python-opentelemetry
@@ -391,7 +369,6 @@ python-pplpy
 python-praw
 python-prawcore
 python-productivity
-python-promise
 python-pvc
 python-pybids
 python-pycares
@@ -414,14 +391,11 @@ python-pyscf
 python-pyshtools
 python-pyside2
 python-pystemd
-python-pytenable
 python-pytest-cases
 python-pytest-flake8
 python-pytest-flakes
 python-pytest-mpi
 python-pytest-relaxed
-python-pytest-steps
-python-pytest-testinfra
 python-pytest-toolbox
 python-pyunicorn
 python-pyvlx
@@ -456,7 +430,6 @@ python-spyder-kernels
 python-sqlalchemy-collectd
 python-sshtunnel
 python-starlette
-python-stdio-mgr
 python-stestr
 python-stompest
 python-subprocess-tee
@@ -466,10 +439,8 @@ python-swiftclient
 python-sybil
 python-tackerclient
 python-taskflow
-python-tcxreader
 python-tenacity
 python-testfixtures
-python-testinfra
 python-test_server
 python-TestSlide
 python-texext
@@ -486,7 +457,6 @@ python-tw2-forms
 python-twilio
 python-typeguard
 python-uvicorn
-python-vconnector
 python-vevents
 python-virtualbmc
 python-vitrageclient
@@ -502,7 +472,6 @@ python-yappi
 python-zarr
 python-ZEO
 python-zict
-python-ZODB
 python-ZODB3
 python-zstd
 python-zuul-client
@@ -518,10 +487,8 @@ sugar-datastore
 sugar-paint
 swift-lang
 sympy
-tmt
 trademgen
 TurboGears2
-udiskie
 uhd
 urh
 usd
@@ -529,7 +496,6 @@ uwsgi
 veusz
 virt-bootstrap
 vtk
-waiverdb
 watchman
 xonsh
 zuul
