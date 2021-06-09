@@ -163,7 +163,7 @@ async def guess_reason(session, url, http_semaphore):
             }
     return None
 
-async def guess_missing_dependency(session, package, build, http_semaphore):
+async def guess_missing_dependency(session, package, build, http_semaphore, fg):
     url = builderlive_link(package, build)
     try:
         content = await fetch(session, url, http_semaphore)
@@ -173,6 +173,7 @@ async def guess_missing_dependency(session, package, build, http_semaphore):
     patterns = [
         r"Problem.*?: package (.*?) requires python\(abi\) = 3\.9",
         r"package (.*?) requires .*?, but none of the providers can be installed",
+        r"Status code: (.*?) for",
     ]
     match_found = False
     for pattern in patterns:
@@ -181,7 +182,9 @@ async def guess_missing_dependency(session, package, build, http_semaphore):
             match_found == True
             match = list(set(match))
             for broken_pkg in match:
-                broken_srpm = source_name(broken_pkg)
+                broken_srpm = "404"
+                if broken_pkg != "404":
+                    broken_srpm = source_name(broken_pkg)
                 if broken_srpm not in missing_dependencies:
                     missing_dependencies[broken_srpm] = []
                     missing_dependencies[broken_srpm].append(package)
@@ -191,6 +194,8 @@ async def guess_missing_dependency(session, package, build, http_semaphore):
             return None
     if not match_found:
         missing_dependencies['match_failed'].append(package)
+        if fg == 'yellow':
+            yellow_pkgs.append(package)
 
 def print_dependency_tree():
     root = Node("/")
@@ -219,7 +224,10 @@ def print_dependency_tree():
                 existing_child[1].parent=None
 
     for pre, _, node in RenderTree(root):
-        print(f"{pre}{node.name}")
+        if node.name in yellow_pkgs:
+            p(f"{pre}{node.name}", fg="yellow")
+        else:
+            p(f"{pre}{node.name}", fg="blue")
 
     most_common = Counter({k: len(v) for k, v in missing_dependencies.items()}).most_common(10)
     print("Top 10 of blockers (match_failed contains packages that could not be parsed):", file=sys.stderr)
@@ -393,7 +401,8 @@ async def process(
             else:
                 fg = 'blue'
     if fg == 'yellow' or fg == 'blue':
-        await guess_missing_dependency(session, package, build, http_semaphore)
+        await guess_missing_dependency(session, package, build, http_semaphore,
+                                      fg)
 
     if fg == 'red':
         if await is_timeout(session, builderlive_link(package, build), http_semaphore):
@@ -482,6 +491,7 @@ async def gather_or_cancel(*tasks):
 missing_dependencies = {
     'match_failed': []
 }
+yellow_pkgs = []
 
 async def main(pkgs=None, open_bug_reports=False, with_reason=False, blues_file=None, magentas_file=None, dependency_tree=None):
     logging.basicConfig(
