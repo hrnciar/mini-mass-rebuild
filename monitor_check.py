@@ -71,12 +71,12 @@ REASONS = {
 
 logger = logging.getLogger('monitor_check')
 
+BZAPI = bugzilla.Bugzilla(BUGZILLA)
 
 def _bugzillas():
-    bzapi = bugzilla.Bugzilla(BUGZILLA)
-    query = bzapi.build_query(product='Fedora')
+    query = BZAPI.build_query(product='Fedora')
     query['blocks'] = TRACKER
-    return [b for b in sorted(bzapi.query(query), key=lambda b: -b.id)
+    return [b for b in sorted(BZAPI.query(query), key=lambda b: -b.id)
             if b.resolution != 'DUPLICATE']
 
 
@@ -163,7 +163,7 @@ async def guess_reason(session, url, http_semaphore):
             }
     return None
 
-async def guess_missing_dependency(session, package, build, http_semaphore, fg):
+async def guess_missing_dependency(session, package, build, http_semaphore, fg, bugs):
     url = builderlive_link(package, build)
     try:
         content = await fetch(session, url, http_semaphore)
@@ -192,11 +192,26 @@ async def guess_missing_dependency(session, package, build, http_semaphore, fg):
                 if broken_srpm not in missing_dependencies:
                     missing_dependencies[broken_srpm] = []
                     missing_dependencies[broken_srpm].append(package)
+                    # Uncomment this if you want to set bugzilla blockers
+                    # bugzilla_set_blockers(bugs, broken_srpm, package)
                 else:
                     if package not in missing_dependencies[broken_srpm]:
                         missing_dependencies[broken_srpm].append(package)
+                        # Uncomment this if you want to set bugzilla blockers
+                        # bugzilla_set_blockers(bugs, broken_srpm, package)
     if not match_found:
         missing_dependencies['match_failed'].append(package)
+
+def bugzilla_set_blockers(bugs, broken_srpm, package):
+    parent_bugzilla = bug_opened(bugs, broken_srpm)
+    child_bugzilla = bug_opened(bugs, package)
+    if parent_bugzilla and child_bugzilla:
+        if child_bugzilla.id not in parent_bugzilla.blocks:
+            bz_update = BZAPI.build_update(blocks_add=child_bugzilla.id)
+            BZAPI.update_bugs([parent_bugzilla.id], bz_update)
+            print(f"Bugzilla updated, {child_bugzilla.component} {child_bugzilla.id} now depends on {parent_bugzilla.component} {parent_bugzilla.id}")
+        else:
+            print(f"Bugzilla already blocked, {child_bugzilla.component} {child_bugzilla.id} depends on {parent_bugzilla.component} {parent_bugzilla.id}")
 
 def print_dependency_tree():
     root = Node("/")
@@ -314,6 +329,13 @@ def bug(bugs, package):
     return None
 
 
+def bug_opened(bugs, package):
+    for b in bugs:
+        if b.component == package and b.status != "CLOSED":
+            return b
+    return None
+
+
 counter = Counter()
 
 def pkgname(nevra):
@@ -406,7 +428,7 @@ async def process(
                 fg = 'blue'
     if fg == 'yellow' or fg == 'blue':
         await guess_missing_dependency(session, package, build, http_semaphore,
-                                      fg)
+                                      fg, bugs)
 
     if fg == 'red':
         if await is_timeout(session, builderlive_link(package, build), http_semaphore):
