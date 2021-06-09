@@ -170,17 +170,26 @@ async def guess_missing_dependency(session, package, build, http_semaphore):
     except aiohttp.client_exceptions.ClientPayloadError:
         logger.debug('broken content %s', url)
         return False
-    match = re.findall(r"Problem.*?: package (.*?) requires python\(abi\) = 3\.9", content)
-    if match:
-        for broken_pkg in match:
-            broken_srpm = source_name(broken_pkg)
-            if broken_srpm not in missing_dependencies:
-                missing_dependencies[broken_srpm] = []
-                missing_dependencies[broken_srpm].append(package)
-            else:
-                if package not in missing_dependencies[broken_srpm]:
+    patterns = [
+        r"Problem.*?: package (.*?) requires python\(abi\) = 3\.9",
+        r"package (.*?) requires .*?, but none of the providers can be installed",
+    ]
+    match_found = False
+    for pattern in patterns:
+        match = re.findall(pattern, content)
+        if match:
+            match_found == True
+            match = list(set(match))
+            for broken_pkg in match:
+                broken_srpm = source_name(broken_pkg)
+                if broken_srpm not in missing_dependencies:
+                    missing_dependencies[broken_srpm] = []
                     missing_dependencies[broken_srpm].append(package)
-    else:
+                else:
+                    if package not in missing_dependencies[broken_srpm]:
+                        missing_dependencies[broken_srpm].append(package)
+            return None
+    if not match_found:
         missing_dependencies['match_failed'].append(package)
 
 def print_dependency_tree():
@@ -383,7 +392,8 @@ async def process(
                 fg = 'red'
             else:
                 fg = 'blue'
-                await guess_missing_dependency(session, package, build, http_semaphore)
+    if fg == 'yellow' or fg == 'blue':
+        await guess_missing_dependency(session, package, build, http_semaphore)
 
     if fg == 'red':
         if await is_timeout(session, builderlive_link(package, build), http_semaphore):
