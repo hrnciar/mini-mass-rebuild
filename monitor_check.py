@@ -175,6 +175,10 @@ async def guess_missing_dependency(session, package, build, http_semaphore, fg):
         r"package (.*?) requires .*?, but none of the providers can be installed",
         r"Status code: (.*?) for",
     ]
+    if fg == 'yellow':
+        yellow_pkgs.append(package)
+    elif fg == 'blue':
+        blue_pkgs.append(package)
     match_found = False
     for pattern in patterns:
         match = re.findall(pattern, content)
@@ -191,11 +195,8 @@ async def guess_missing_dependency(session, package, build, http_semaphore, fg):
                 else:
                     if package not in missing_dependencies[broken_srpm]:
                         missing_dependencies[broken_srpm].append(package)
-            return None
     if not match_found:
         missing_dependencies['match_failed'].append(package)
-        if fg == 'yellow':
-            yellow_pkgs.append(package)
 
 def print_dependency_tree():
     root = Node("/")
@@ -226,8 +227,11 @@ def print_dependency_tree():
     for pre, _, node in RenderTree(root):
         if node.name in yellow_pkgs:
             p(f"{pre}{node.name}", fg="yellow")
-        else:
+        elif node.name in blue_pkgs:
             p(f"{pre}{node.name}", fg="blue")
+        else:
+            p(f"{pre}{node.name}", fg="green")
+
 
     most_common = Counter({k: len(v) for k, v in missing_dependencies.items()}).most_common(10)
     print("Top 10 of blockers (match_failed contains packages that could not be parsed):", file=sys.stderr)
@@ -492,6 +496,7 @@ missing_dependencies = {
     'match_failed': []
 }
 yellow_pkgs = []
+blue_pkgs = []
 
 async def main(pkgs=None, open_bug_reports=False, with_reason=False, blues_file=None, magentas_file=None, dependency_tree=None):
     logging.basicConfig(
