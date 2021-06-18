@@ -463,7 +463,7 @@ async def open_bz(package, build, status, browser_lock, reason=None):
     summary = f"{package} fails to build with Python 3.10: {reason['short_description']}"
 
     description = dedent(f"""
-        {package} fails to build with Python 3.10.0b2.
+        {package} fails to build with Python 3.10.0b3.
 
         {reason['long_description']}
 
@@ -478,7 +478,7 @@ async def open_bz(package, build, status, browser_lock, reason=None):
 
         Let us know here if you have any questions.
 
-        Python 3.10 will be included in Fedora 35. To make that update smoother, we're building Fedora packages with early pre-releases of Python 3.10.
+        Python 3.10 is already included in Fedora 35. To make that update smoother, we're building Fedora packages with all pre-releases of Python 3.10.
         A build failure prevents us from testing all dependent packages (transitive [Build]Requires), so if this package is required a lot, it's important for us to get it fixed soon.
         We'd appreciate help from the people who know this package best, but if you don't want to work on this now, let us know so we can try to work around it on our side.
     """)
