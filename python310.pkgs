@@ -101,6 +101,7 @@ cdist
 cekit
 centpkg
 ceph
+certbot
 chrome-gnome-shell
 cinch
 cjdns
@@ -220,6 +221,7 @@ flatcam
 flatpak-module-tools
 flent
 fmf
+fontdump
 fontforge
 fonts-tweak-tool
 fonttools
@@ -432,6 +434,7 @@ libpfm
 libplist
 libpoly
 libpreludedb
+libproxy
 libpwquality
 librealsense
 libreoffice
@@ -554,6 +557,7 @@ nicotine+
 nik4
 ninja-build
 nispor
+NLopt
 nml
 nmstate
 nodepool
@@ -657,6 +661,7 @@ powerline
 pre-commit
 prelude-correlator
 preprocess
+prewikka
 prewikka-updatedb
 printrun
 ProDy
@@ -1010,6 +1015,22 @@ python-cclib
 python-celery
 python-cerberus
 python-cerealizer
+python-certbot-apache
+python-certbot-dns-cloudflare
+python-certbot-dns-cloudxns
+python-certbot-dns-digitalocean
+python-certbot-dns-dnsimple
+python-certbot-dns-dnsmadeeasy
+python-certbot-dns-gehirn
+python-certbot-dns-google
+python-certbot-dns-linode
+python-certbot-dns-luadns
+python-certbot-dns-nsone
+python-certbot-dns-ovh
+python-certbot-dns-rfc2136
+python-certbot-dns-route53
+python-certbot-dns-sakuracloud
+python-certbot-nginx
 python-certifi
 python-cffi
 python-cffsubr
@@ -1109,6 +1130,7 @@ python-commandparse
 python-CommonMark
 python-compal
 python-conda-package-handling
+python-configargparse
 python-configobj
 python-configshell
 python-confluent-kafka
@@ -1153,6 +1175,7 @@ python-cssmin
 python-css-parser
 python-cssselect
 python-cssselect2
+python-cssutils
 python-cu2qu
 python-cups
 python-curio
