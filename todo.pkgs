@@ -89,8 +89,6 @@ python-diskcache
 python-django-auth-ldap
 python-django-post_office
 python-docx
-python-elephant
-python-elpy
 python-envisage
 python-eyed3
 python-falcon
@@ -106,7 +104,6 @@ python-grako
 python-healpy
 python-jsonfield
 python-jsons
-python-jupyter-polymake
 python-lfpy
 python-losant-rest
 python-lzo
@@ -119,7 +116,6 @@ python-mne-bids
 python-mnemonic
 python-mtg
 python-music21
-python-neurosynth
 python-niaaml
 python-niaclass
 python-nikola
@@ -157,8 +153,6 @@ python-test_server
 python-trimesh
 python-twilio
 python-uvicorn
-python-wcmatch
-python-webpy
 python-wsproto
 python-xbout
 python-zict

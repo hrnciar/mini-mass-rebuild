@@ -1328,6 +1328,8 @@ python-editorconfig
 python-efel
 python-elasticsearch
 python-elementpath
+python-elephant
+python-elpy
 python-email_reply_parser
 python-email-validator
 python-emcee
@@ -1718,6 +1720,7 @@ python-jupyter-core
 python-jupyter-kernel-singular
 python-jupyter-kernel-test
 python-jupyterlab_pygments
+python-jupyter-polymake
 python-justbases
 python-justbytes
 python-jwcrypto
@@ -1745,7 +1748,6 @@ python-krbcontext
 python-kubernetes
 python-lacrosse
 python-landslide
-python-langdetect
 python-language-server
 python-lark-parser
 python-lasagne
@@ -1959,6 +1961,7 @@ python-network-runner
 python-networkx
 python-neurodsp
 python-neurom
+python-neurosynth
 python-neutronclient
 python-niapy
 python-nibabel
@@ -2982,10 +2985,12 @@ python-watchdog
 python-watchgod
 python-waterfurnace
 python-wavio
+python-wcmatch
 python-wcwidth
 python-webcolors
 python-webencodings
 python-webob
+python-webpy
 python-webscrapbook
 python-websocket-client
 python-websockets
