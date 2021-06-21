@@ -143,6 +143,7 @@ custodia
 cvc4
 cxxtest
 Cython
+datagrepper
 datanommer
 datanommer-commands
 dblatex
@@ -588,6 +589,7 @@ OpenImageIO
 OpenLP
 openmeeg
 openmpi
+openms
 openscap-daemon
 openshadinglanguage
 openssh-ldap-authkeys
@@ -1161,7 +1163,9 @@ python-cwcwidth
 python-cx-oracle
 python-cxxfilt
 python-cycler
+python-cypari2
 python-cypy
+python-cysignals
 python-cytoolz
 python-d2to1
 python-daemon
@@ -1438,6 +1442,7 @@ python-fontMath
 python-fontname
 python-formats
 python-formencode
+python-fpylll
 python-freecell_solver
 python-freeipa
 python-freetype
@@ -1635,6 +1640,7 @@ python-ipgetter
 python-ipgetter2
 python-ipmi
 python-iptools
+python-IPy
 python-ipykernel
 python-ipyparallel
 python-ipython_genutils
@@ -1704,6 +1710,7 @@ python-jsonrpcserver
 python-jsonschema
 python-junit_xml
 python-junitxml
+python-jupymake
 python-jupyter-c-kernel
 python-jupyter-client
 python-jupyter-console
@@ -2173,6 +2180,7 @@ python-portend
 python-posix_ipc
 python-power
 python-poyo
+python-pplpy
 python-precis_i18n
 python-prefixed
 python-pretend
@@ -2783,6 +2791,7 @@ python-supersmoother
 python-sure
 python-sushy
 python-svg
+python-svg-path
 python-svgwrite
 python-swagger-spec-validator
 python-swiftclient
@@ -3194,6 +3203,7 @@ rtlsdr-scanner
 rubber
 rust-packaging
 s3cmd
+sagemath
 salt
 samba
 sanlock

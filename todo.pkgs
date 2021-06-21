@@ -10,7 +10,6 @@ certbot
 clufter
 collectd
 condor
-datagrepper
 fbthrift
 folly
 fontdump
@@ -84,8 +83,6 @@ python-configargparse
 python-cookiecutter
 python-cssutils
 python-csvkit
-python-cypari2
-python-cysignals
 python-databay
 python-descartes
 python-diskcache
@@ -102,16 +99,13 @@ python-flask-autoindex
 python-flask-silk
 python-flask-whooshee
 python-fn
-python-fpylll
 python-fsleyes-props
 python-furl
 python-gast
 python-grako
 python-healpy
-python-IPy
 python-jsonfield
 python-jsons
-python-jupymake
 python-jupyter-polymake
 python-lfpy
 python-losant-rest
@@ -130,7 +124,6 @@ python-niaaml
 python-niaclass
 python-nikola
 python-orderedmultidict
-python-pplpy
 python-praw
 python-prawcore
 python-productivity
@@ -159,7 +152,6 @@ python-spnego
 python-sport-activities-features
 python-stompest
 python-subprocess-tee
-python-svg-path
 python-testfixtures
 python-test_server
 python-trimesh
@@ -172,7 +164,6 @@ python-xbout
 python-zict
 pythran
 rmol
-sagemath
 spectrographic
 sshuttle
 sudo
