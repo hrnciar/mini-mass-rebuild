@@ -16,6 +16,7 @@ alot
 ampy
 anaconda
 andriller
+androguard
 androwarn
 ansible
 ansible-bender
@@ -25,6 +26,7 @@ ansible-inventory-grapher
 ansible-lint
 antlr4-project
 apbs
+APLpy
 apostrophe
 appliance-tools
 apx
@@ -87,8 +89,10 @@ btrfs-sxbackup
 bubblemail
 buildbot
 bumpversion
+buttermanager
 cairo-dock-plug-ins
 calamares
+calibre
 calypso
 cantoolz
 cantor
@@ -115,6 +119,7 @@ cobbler
 coccinelle
 codespell
 colin
+collectd
 commissaire-client
 compizconfig-python
 compose-utils
@@ -140,7 +145,6 @@ csdiff
 csmock
 csound
 cura
-custodia
 cvc4
 cxxtest
 Cython
@@ -230,6 +234,7 @@ freeipa
 freeipa-desktop-profile
 freeipa-fas
 freeipa-healthcheck
+freeradius
 frescobaldi
 fros
 fusion-icon
@@ -249,6 +254,7 @@ gerrymander
 getdp
 gfal2-python
 gfal2-util
+gi-docgen
 ginga
 git-archive-all
 git-cola
@@ -357,6 +363,8 @@ isomd5sum
 jack-mixer
 javapackages-tools
 jc
+jrnl
+jsonnet
 kea
 kerberoast
 kernel-tools
@@ -484,6 +492,7 @@ lttng-ust
 lutris
 luxcorerender
 lvm2
+m2crypto
 maildirproc
 mailman3-fedmsg-plugin
 mailnag
@@ -533,6 +542,8 @@ mqtt-randompub
 mraa
 msoffcrypto-tool
 mu
+muse
+MUSIC
 mycli
 mysql-connector-python
 nanovna-saver
@@ -594,9 +605,11 @@ OpenLP
 openmeeg
 openmpi
 openms
+openscap
 openscap-daemon
 openshadinglanguage
 openssh-ldap-authkeys
+opentrep
 openvdb
 openvswitch
 openwsman
@@ -693,6 +706,7 @@ pychess
 pychromecast
 pycmd
 pycolumnize
+pydeps
 pydot
 PyDrive
 pyee
@@ -727,6 +741,7 @@ pyOpenSSL
 pyosmium
 pyotherside
 pyowm
+pyp2rpm
 PyPAM
 pyparsing
 pyparted
@@ -785,6 +800,7 @@ python-adb-shell
 python-adext
 python-admesh
 python-advisory-parser
+python-aexpect
 python-affine
 python-afsapi
 python-ailment
@@ -851,6 +867,7 @@ python-ansicolor
 python-ansicolors
 python-ansiwrap
 python-anyconfig
+python-anyio
 python-anyjson
 python-anykeystore
 python-anymarkup
@@ -863,6 +880,7 @@ python-apply-defaults
 python-AppTools
 python-APScheduler
 python-apsw
+python-apt
 python-apypie
 python-archinfo
 python-aresponses
@@ -879,11 +897,13 @@ python-ase
 python-asgiref
 python-asn1crypto
 python-aspy.yaml
+python-asteval
 python-astral
 python-astroid
 python-astroML
 python-astroplan
 python-astropy
+python-astropy-healpix
 python-astropy-helpers
 python-astroquery
 python-astroscrappy
@@ -909,8 +929,95 @@ python-autobahn
 python-Automat
 python-automaton
 python-autopep8
+python-avocado
 python-awesomeversion
 python-AWSIoTPythonSDK
+python-azure-batch
+python-azure-common
+python-azure-core
+python-azure-cosmos
+python-azure-datalake-store
+python-azure-functions-devops-build
+python-azure-graphrbac
+python-azure-identity
+python-azure-keyvault
+python-azure-keyvault-administration
+python-azure-keyvault-certificates
+python-azure-keyvault-keys
+python-azure-keyvault-secrets
+python-azure-loganalytics
+python-azure-mgmt-advisor
+python-azure-mgmt-apimanagement
+python-azure-mgmt-appconfiguration
+python-azure-mgmt-authorization
+python-azure-mgmt-batch
+python-azure-mgmt-batchai
+python-azure-mgmt-billing
+python-azure-mgmt-botservice
+python-azure-mgmt-cdn
+python-azure-mgmt-cognitiveservices
+python-azure-mgmt-compute
+python-azure-mgmt-consumption
+python-azure-mgmt-containerinstance
+python-azure-mgmt-containerregistry
+python-azure-mgmt-containerservice
+python-azure-mgmt-core
+python-azure-mgmt-cosmosdb
+python-azure-mgmt-databoxedge
+python-azure-mgmt-datalake-analytics
+python-azure-mgmt-datalake-store
+python-azure-mgmt-datamigration
+python-azure-mgmt-deploymentmanager
+python-azure-mgmt-devtestlabs
+python-azure-mgmt-dns
+python-azure-mgmt-eventgrid
+python-azure-mgmt-eventhub
+python-azure-mgmt-extendedlocation
+python-azure-mgmt-hdinsight
+python-azure-mgmt-imagebuilder
+python-azure-mgmt-iotcentral
+python-azure-mgmt-iothub
+python-azure-mgmt-iothubprovisioningservices
+python-azure-mgmt-keyvault
+python-azure-mgmt-kusto
+python-azure-mgmt-loganalytics
+python-azure-mgmt-managedservices
+python-azure-mgmt-managementgroups
+python-azure-mgmt-maps
+python-azure-mgmt-marketplaceordering
+python-azure-mgmt-media
+python-azure-mgmt-monitor
+python-azure-mgmt-msi
+python-azure-mgmt-netapp
+python-azure-mgmt-network
+python-azure-mgmt-policyinsights
+python-azure-mgmt-privatedns
+python-azure-mgmt-rdbms
+python-azure-mgmt-recoveryservices
+python-azure-mgmt-recoveryservicesbackup
+python-azure-mgmt-redhatopenshift
+python-azure-mgmt-redis
+python-azure-mgmt-relay
+python-azure-mgmt-reservations
+python-azure-mgmt-resource
+python-azure-mgmt-search
+python-azure-mgmt-security
+python-azure-mgmt-servicebus
+python-azure-mgmt-servicefabric
+python-azure-mgmt-servicefabricmanagedclusters
+python-azure-mgmt-signalr
+python-azure-mgmt-sql
+python-azure-mgmt-sqlvirtualmachine
+python-azure-mgmt-storage
+python-azure-mgmt-synapse
+python-azure-mgmt-trafficmanager
+python-azure-mgmt-web
+python-azure-multiapi-storage
+python-azure-sdk
+python-azure-storage-common
+python-azure-synapse-accesscontrol
+python-azure-synapse-artifacts
+python-azure-synapse-spark
 python-b2sdk
 python-babelfish
 python-backcall
@@ -929,6 +1036,7 @@ python-beanbag
 python-beautifulsoup4
 python-beautifultable
 python-behave
+python-beniget
 python-betamax
 python-betamax-matchers
 python-betamax-serializers
@@ -970,6 +1078,8 @@ python-botocore
 python-bottle
 python-Bottleneck
 python-bottle-sqlite
+python-boutdata
+python-boututils
 python-bowler
 python-box
 python-boxsdk
@@ -987,6 +1097,7 @@ python-BTrees
 python-btrfs
 python-bucky
 python-bugzilla
+python-build
 python-CacheControl
 python-cached_property
 python-cachelib
@@ -1010,6 +1121,7 @@ python-catkin-sphinx
 python-catkin_tools
 python-cbor2
 python-cccolutils
+python-ccdproc
 python-cchardet
 python-cclib
 python-celery
@@ -1038,6 +1150,7 @@ python-cfgv
 python-cftime
 python-chai
 python-chameleon
+python-chaospy
 python-chardet
 python-check-manifest
 python-cheetah
@@ -1080,6 +1193,7 @@ python-cmd2
 python-cmdln
 python-cmigemo
 python-coapthon3
+python-cocotb
 python-codecov
 python-colander
 python-colcon-argcomplete
@@ -1133,15 +1247,18 @@ python-conda-package-handling
 python-configargparse
 python-configobj
 python-configshell
+python-configupdater
 python-confluent-kafka
 python-confuse
 python-connect-box
+python-connection_pool
 python-constantly
 python-construct
 python-contextily
 python-contextlib2
 python-contextualbandits
 python-convertdate
+python-cookiecutter
 python-cooldict
 python-copr
 python-copr-common
@@ -1214,6 +1331,7 @@ python-dbusmock
 python-dbus-next
 python-dbus-python-client-gen
 python-dbus-signature-pyparsing
+python-dbutils
 python-dcrpm
 python-ddt
 python-deap
@@ -1365,6 +1483,7 @@ python-enrich
 python-enthought-sphinx-theme
 python-entrypoints
 python-enturclient
+python-environs
 python-enzyme
 python-epc
 python-ephem
@@ -1372,6 +1491,7 @@ python-epi
 python-epson-projector
 python-epub
 python-etcd
+python-etcd3
 python-etcd3gw
 python-ethtool
 python-et_xmlfile
@@ -1385,6 +1505,7 @@ python-execnet
 python-exif
 python-extension-helpers
 python-extras
+python-eyed3
 python-f5-icontrol-rest
 python-f5-sdk
 python-fabric
@@ -1468,6 +1589,7 @@ python-fontname
 python-formats
 python-formencode
 python-fpylll
+python-fqdn
 python-freecell_solver
 python-freeipa
 python-freetype
@@ -1477,6 +1599,7 @@ python-frozendict
 python-frozen-flask
 python-fs
 python-fsleyes
+python-fsleyes-props
 python-fsleyes-widgets
 python-fslpy
 python-fsspec
@@ -1491,6 +1614,7 @@ python-fuzzywuzzy
 python-fypp
 python-gabbi
 python-gammu
+python-gast
 python-gatspy
 python-gattlib
 python-gccinvocation
@@ -1547,6 +1671,7 @@ python-gpxpy
 python-grabbit
 python-grabserial
 python-gradunwarp
+python-grako
 python-graphene
 python-graphene-sqlalchemy
 python-graphitesend
@@ -1578,6 +1703,7 @@ python-haversion
 python-hdate
 python-hdfs
 python-hdmf
+python-healpy
 python-heapdict
 python-heatclient
 python-helpdev
@@ -1592,6 +1718,7 @@ python-hl7
 python-hole
 python-homeconnect
 python-homeworks
+python-howdoi
 python-hpack
 python-hpilo
 python-hs-dbus-signature
@@ -1632,6 +1759,7 @@ python-ifaddr
 python-ifcfg
 python-igor
 python-igraph
+python-ijson
 python-imagehash
 python-imageio
 python-imagesize
@@ -1639,6 +1767,7 @@ python-imbalanced-learn
 python-img2pdf
 python-immutables
 python-impacket
+python-importlib-metadata
 python-importmagic
 python-incremental
 python-indexed_gzip
@@ -1743,6 +1872,7 @@ python-jupyter-core
 python-jupyter-kernel-singular
 python-jupyter-kernel-test
 python-jupyterlab_pygments
+python-jupyter-packaging
 python-jupyter-polymake
 python-justbases
 python-justbytes
@@ -1754,6 +1884,7 @@ python-kajiki
 python-kaptan
 python-kazoo
 python-kdcproxy
+python-keep
 python-kerberos
 python-keyring
 python-keystoneauth1
@@ -1791,6 +1922,8 @@ python-lesscpy
 python-leveldb
 python-Levenshtein
 python-lexicon
+python-lfpy
+python-lfpykit
 python-libarchive-c
 python-libcloud
 python-libcst
@@ -1822,6 +1955,9 @@ python-logging-tree
 python-logutils
 python-logzero
 python-lrparsing
+python-lsp-black
+python-lsp-jsonrpc
+python-lsp-server
 python-luftdaten
 python-lunr
 python-lupa
@@ -1894,10 +2030,12 @@ python-minidb
 python-minidump
 python-minikerberos
 python-minimock
+python-missingno
 python-mistralclient
 python-mistune
 python-mitogen
 python-mmtf
+python-mnemonic
 python-mock
 python-mock-ssh-server
 python-modernize
@@ -1942,6 +2080,7 @@ python-multitasking
 python-munch
 python-munkres
 python-murano-pkg-check
+python-music21
 python-musicbrainzngs
 python-mutagen
 python-mutatormath
@@ -1986,8 +2125,11 @@ python-neurodsp
 python-neurom
 python-neurosynth
 python-neutronclient
+python-niaaml
+python-niaclass
 python-niapy
 python-nibabel
+python-nikola
 python-nilearn
 python-nine
 python-nipy
@@ -2070,6 +2212,7 @@ python-openstackclient
 python-openstackdocstheme
 python-openstacksdk
 python-opentelemetry
+python-opentracing
 python-operator-courier
 python-opnsense
 python-optcomplete
@@ -2205,7 +2348,9 @@ python-portalocker
 python-portend
 python-posix_ipc
 python-power
+python-pox
 python-poyo
+python-ppft
 python-pplpy
 python-precis_i18n
 python-prefixed
@@ -2279,6 +2424,7 @@ python-pydocstyle
 python-pydotplus
 python-pyduofern
 python-pydyf
+python-pyeclib
 python-pyelectro
 python-pyemby
 python-pyemd
@@ -2327,12 +2473,14 @@ python-pyls_black
 python-pyls-spyder
 python-pymacaroons-pynacl
 python-pymata-express
+python-pymatreader
 python-pymc3
 python-pymdown-extensions
 python-pymediainfo
 python-pymeeus
 python-pymemcache
 python-pymilter
+python-pymoc
 python-pymochad
 python-pymod2pkg
 python-pyModbusTCP
@@ -2344,6 +2492,7 @@ python-PyMySQL
 python-pynacl
 python-pynest2d
 python-pynetbox
+python-pynetdicom
 python-pyngus
 python-pynlpl
 python-pynn
@@ -2368,6 +2517,7 @@ python-pypillowfight
 python-pypng
 python-pyprocdev
 python-pypubsub
+python-pyqt5-sip
 python-pyqtchart
 python-pyqtgraph
 python-pyquery
@@ -2389,6 +2539,7 @@ python-pyrtlsdr
 python-pysam
 python-pysaml2
 python-pysb
+python-pyscaffold
 python-pyscf
 python-pyshark
 python-pyshtools
@@ -2407,6 +2558,7 @@ python-pyspike
 python-pysqueezebox
 python-pysrt
 python-pystalk
+python-pystemd
 python-pystray
 python-pyswarms
 python-pyswip
@@ -2499,6 +2651,7 @@ python-qcelemental
 python-qdarkstyle
 python-qrcode
 python-qrencode
+python-qstylizer
 python-qt5
 python-QtAwesome
 python-qtconsole
@@ -2547,6 +2700,7 @@ python-repoze-tm2
 python-repoze-who
 python-repoze-who-plugins-sa
 python-represent
+python-reproject
 python-requests
 python-requests-cache
 python-requests-credssp
@@ -2612,6 +2766,7 @@ python-ruamel-yaml
 python-ruamel-yaml-clib
 python-ruffus
 python-rustcfg
+python-rx
 python-rxjson
 python-s3transfer
 python-saharaclient
@@ -2721,7 +2876,6 @@ python-sphinx-autodoc-typehints
 python-sphinx-bootstrap-theme
 python-sphinx-click
 python-sphinxcontrib-actdiag
-python-sphinxcontrib-adadomain
 python-sphinxcontrib-apidoc
 python-sphinxcontrib-applehelp
 python-sphinxcontrib-asyncio
@@ -2768,6 +2922,7 @@ python-sphinx-testing
 python-sphinx-theme-alabaster
 python-sphinx-theme-py3doc-enhanced
 python-sphobjinv
+python-sport-activities-features
 python-spur
 python-spyder-kernels
 python-spyking-circus
@@ -2802,6 +2957,7 @@ python-stestr
 python-stevedore
 python-stomper
 python-stone
+python-stopit
 python-straight-plugin
 python-streamlink
 python-strict-rfc3339
@@ -2902,6 +3058,7 @@ python-translitcodec
 python-tree-format
 python-treq
 python-trezor
+python-trimesh
 python-trio
 python-trollius
 python-trololio
@@ -3136,6 +3293,7 @@ python-zdaemon
 python-zeep
 python-ZEO
 python-zeroconf
+python-zipp
 python-zipstream
 python-zm
 python-zmq
@@ -3210,6 +3368,7 @@ revelation
 rhythmbox-ampache
 rig
 rmlint
+rmol
 roca-detect
 rofimoji
 root
@@ -3270,6 +3429,7 @@ slingshot
 slowloris
 smbcmp
 smoldyn
+snakemake
 snallygaster
 SoapySDR
 socialscan
@@ -3279,6 +3439,7 @@ sos
 soundconverter
 sourcextractor++
 spec2scl
+spectrographic
 speech-dispatcher
 speedtest-cli
 spglib
@@ -3294,6 +3455,8 @@ subscription-manager
 subunit
 subversion
 sugar
+sugar-datastore
+sugar-paint
 sugar-toolkit-gtk3
 supervisor
 suricata
@@ -3336,6 +3499,7 @@ tpm2-pkcs11
 trac
 tracer
 trac-tracnav-plugin
+trademgen
 transifex-client
 translate-toolkit
 transmageddon
