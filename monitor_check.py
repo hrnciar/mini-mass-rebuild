@@ -86,6 +86,7 @@ async def bugzillas():
 
 
 async def fetch(session, url, http_semaphore, *, json=False):
+    retry = False
     async with http_semaphore:
         logger.debug('fetch %s', url)
         try:
@@ -94,13 +95,16 @@ async def fetch(session, url, http_semaphore, *, json=False):
                 # https://pagure.io/copr/copr/issue/1648
                 if response.status == 404 and url.endswith('.gz'):
                     url = url[:-3]
-                    return await fetch(session, url, http_semaphore, json=json)
-                if json:
+                    retry = True
+                elif json:
                     return await response.json()
-                return await response.text('utf-8')
+                else:
+                    return await response.text('utf-8')
         except aiohttp.client_exceptions.ServerDisconnectedError:
             await asyncio.sleep(1)
-            return await fetch(session, url, http_semaphore, json=json)
+            retry = True
+    if retry:
+        return await fetch(session, url, http_semaphore, json=json)
 
 
 async def length(session, url, http_semaphore):
