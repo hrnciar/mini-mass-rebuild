@@ -10,7 +10,8 @@ def repoquery(*args, **kwargs):
         cmd.append('--repo=rawhide')
     else:
         cmd.extend(['--repo=fedora', '--repo=updates',
-                    '--repo=updates-testing', f'--releasever={version}'])
+                    f'--releasever={version}'])
+                    #'--repo=updates-testing', f'--releasever={version}'])
     if args:
         cmd.extend(args)
     for option, value in kwargs.items():
@@ -27,15 +28,22 @@ def repoquery(*args, **kwargs):
 
 def old_pkgs():
     r = []
-    for version in (32,):
-        for dependency in ('python(abi) = 3.8',
-                           'libpython3.8.so.1.0()(64bit)',
-                           'libpython3.8d.so.1.0()(64bit)'):
+    for version in (33,34):
+        for dependency in ('python(abi) = 3.9',
+                           'libpython3.9.so.1.0()(64bit)',
+                           'libpython3.9d.so.1.0()(64bit)'):
             r.extend(repoquery(version=version,
                                whatrequires=dependency,
                                qf='%{NAME} %{EPOCH}:%{VERSION}-%{RELEASE}'))
     return r
 
+def what_required(dependency):
+    r = []
+    for version in (33,34):
+        r.extend(repoquery(version=version,
+                           whatrequires=dependency,
+                           qf='%{NAME} %{EPOCH}:%{VERSION}-%{RELEASE}'))
+    return r
 
 class SortableEVR:
     def __init__(self, evr):
@@ -54,12 +62,21 @@ class SortableEVR:
 
 def removed_pkgs():
     name_versions = defaultdict(set)
-    old_name_evrs = old_pkgs()
-    new = set(repoquery(all=True, qf='%{NAME}', version=34))
-    for name_evr in old_name_evrs:
+    old_name_evrs = set(old_pkgs())
+    new = set(repoquery(all=True, qf='%{NAME}', version=None))
+    seen = set()
+    print("removed_pkgs()")
+    while old_name_evrs:
+        print(len(old_name_evrs))
+        name_evr = old_name_evrs.pop()
         name, _, evr = name_evr.partition(' ')
         if name not in new:
             name_versions[name].add(evr)
+            for dependent in what_required(name):
+                if dependent.split(' ')[0] not in seen:
+                    print(f"# {name} required by {dependent}", file=sys.stderr)
+                    old_name_evrs.add(dependent)
+        seen.add(name)
     return {name: max(versions, key=SortableEVR)
             for name, versions in name_versions.items()}
 
@@ -103,7 +120,7 @@ def format_obsolete(pkg, evr):
 rp = removed_pkgs()
 for pkg in sorted(rp):
     version = drop_0epoch(drop_dist(rp[pkg]))
-    whatobsoletes = repoquery(whatobsoletes=f'{pkg} = {version}', qf='%{NAME}', version=34)
+    whatobsoletes = repoquery(whatobsoletes=f'{pkg} = {version}', qf='%{NAME}', version=None)
     if not whatobsoletes or whatobsoletes == ['fedora-obsolete-packages']:
         print(format_obsolete(pkg, version))
     else:
