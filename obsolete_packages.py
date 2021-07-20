@@ -82,7 +82,7 @@ def repoquery(*args, **kwargs):
     raise RuntimeError('unknown query')
 
 
-def old_pkgs():
+def get_old_pkgs():
     r = set()
     for version in (33,34):
         for dependency in ('python(abi) = 3.9',
@@ -91,7 +91,7 @@ def old_pkgs():
             pkgs = repoquery(version=version,
                     whatrequires_exact=dependency)
             for pkg in pkgs:
-                r.add(f'{pkg.name} {pkg.epoch}:{pkg.version}-{pkg.release}')
+                r.add(pkg)
     return r
 
 
@@ -112,20 +112,19 @@ class SortableEVR:
 
 def removed_pkgs():
     name_versions = defaultdict(set)
-    old_name_evrs = old_pkgs()
+    old_pkgs = get_old_pkgs()
     new = set()
     for pkg in repoquery(all=True, version=None):
-        new.add(f'{pkg.name}')
+        new.add(pkg.name)
     seen = set()
-    while old_name_evrs:
-        name_evr = old_name_evrs.pop()
-        name, _, evr = name_evr.partition(' ')
-        if name not in new:
-            name_versions[name].add(evr)
-            for dependent in what_required(name):
-                if dependent.split(' ')[0] not in seen:
-                    old_name_evrs.add(dependent)
-        seen.add(name)
+    while old_pkgs:
+        old_pkg = old_pkgs.pop()
+        if old_pkg.name not in new:
+            name_versions[old_pkg.name].add(f'{old_pkg.epoch}:{old_pkg.version}-{old_pkg.release}')
+            for dependent in what_required(old_pkg.name):
+                if dependent.name not in seen:
+                    old_pkgs.add(dependent)
+        seen.add(old_pkg.name)
     return {name: max(versions, key=SortableEVR)
             for name, versions in name_versions.items()}
 
@@ -134,7 +133,7 @@ def what_required(dependency):
     for version in (33,34):
         pkgs = repoquery(version=version, whatrequires=dependency)
         for pkg in pkgs:
-            r.append(f'{pkg.name} {pkg.epoch}:{pkg.version}-{pkg.release}')
+            r.append(pkg)
     return r
 
 
